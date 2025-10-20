@@ -1,21 +1,14 @@
 {
   "name": "crypto-news-telegram-bot",
   "version": "1.0.0",
-  "description": "Telegram alert bot for crypto news using Supabase, Vercel, Node 22 and Gemini",
-  "main": "api/fetch-rss.js",
-  "engines": {
-    "node": "22.x"
-  },
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node api/fetch-rss.js",
-    "lint": "eslint . || true"
+    "start": "node api/fetch-rss.js"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.0.0",
-    "node-fetch": "^3.0.0",
-    "rss-parser": "^3.12.0",
-    "crypto": "^1.0.1",
-    "form-data": "^4.0.0"
-  },
-  "type": "module"
+    "axios": "^1.6.0",
+    "node-telegram-bot-api": "^0.63.0",
+    "rss-parser": "^3.13.0"
+  }
 }
