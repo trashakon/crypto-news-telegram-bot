@@ -1,11 +1,8 @@
 {
   "version": 2,
   "name": "crypto-news-telegram-bot",
-  "builds": [
-    { "src": "api/*.js", "use": "@vercel/node" }
-  ],
   "routes": [
-    { "src": "/api/fetch-rss", "dest": "/api/fetch-rss.js", "methods": ["GET","POST"] },
-    { "src": "/api/telegram-webhook", "dest": "/api/telegram-webhook.js", "methods": ["POST"] }
+    { "src": "/api/fetch-rss", "dest": "/api/fetch-rss.js" },
+    { "src": "/api/telegram-webhook", "dest": "/api/telegram-webhook.js" }
   ]
 }
