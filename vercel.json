@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "name": "crypto-news-telegram-bot",
-  "routes": [
-    { "src": "/api/fetch-rss", "dest": "/api/fetch-rss.js" },
-    { "src": "/api/telegram-webhook", "dest": "/api/telegram-webhook.js" }
-  ]
-}
